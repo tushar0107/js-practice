@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react tutorial</title>
+    <style>
+        body{
+
+            background-image: url('/bg2.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form{
+            width: 50%;
+            margin: 50px auto;
+            border: 1px solid red;
+        }
+        input[type=text]{
+            padding: 8px;
+        }
+        input[type=password]{
+            padding: 8px;
+        }
+        .key{
+            display: inline;
+            padding: 24px;
+            background-color: rgb(116, 116, 116);
+            border: 2px solid rgb(241, 241, 241);
+        }
+    </style>
+</head>
+<body>
+    <div id="design">
+         <form id="login-form">
+            <h1>My form</h1>
+            <input id="username" type="text" placeholder="Username" required>
+            <br><br>
+            <input id="password" type="password" placeholder="Password" required>
+            <br><br>
+            <button id="btn-submit" type="submit" value="Submit">Submit</button>
+
+         </form>
+    </div>
+
+    <h1> press the keys displayed here on your keyboard</h1>
+    <div id="keyboard" tabindex="0">
+    <audio id="sound-a" src="boom.wav"></audio>
+    <div id="letter-a" class="key">A</div>
+    <audio id="sound-s" src="clap.wav"></audio>
+    <div id="letter-s" class="key">S</div>
+    <audio id="sound-d" src="kick.wav"></audio>
+    <div id="letter-d" class="key">D</div>
+    <audio id="sound-f" src="hihat.wav"></audio>
+    <div id="letter-f" class="key">F</div>
+    <audio id="sound-g" src="ride.wav"></audio>
+    <div id="letter-g" class="key">G</div>
+    <audio id="sound-h" src="snare.wav"></audio>
+    <div id="letter-h" class="key">H</div>
+    <audio id="sound-j" src="tink.wav"></audio>
+    <div id="letter-j" class="key">J</div>
+    <audio id="sound-k" src="tom.wav"></audio>
+    <div id="letter-k" class="key">K</div>
+    <audio id="sound-l" src="openhat.wav"></audio>
+    <div id="letter-l" class="key">L</div>
+</div>
+    
+
+
+    <script src="audiokey.js">
+
+    </script>
+
+    <script src="index.js">
+
+    </script>
+    <!-- <script src="keyevents.js">
+
+    </script> -->
+</body>
+</html>
